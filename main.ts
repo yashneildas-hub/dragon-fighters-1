@@ -417,9 +417,15 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Projenemy, function (sprite, oth
     sprites.destroy(otherSprite)
     statusbar2.value += -6
 })
+statusbars.onZero(StatusBarKind.EnemyHealth, function (status) {
+    game.gameOver(true)
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Shotenemyattcak, function (sprite, otherSprite) {
     sprites.destroy(otherSprite)
     statusbar2.value += -6
+})
+statusbars.onZero(StatusBarKind.Health, function (status) {
+    game.gameOver(false)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Qethigood, function (sprite, otherSprite) {
     sprites.destroy(otherSprite)
