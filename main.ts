@@ -441,6 +441,7 @@ let mySprite3: Sprite = null
 let mySprite: Sprite = null
 let statusbar2: StatusBarSprite = null
 let statusbar: StatusBarSprite = null
+game.showLongText("Press A to roll each roll is random and deploys a different attack your goal is to win against the ai enemy", DialogLayout.Bottom)
 tiles.setCurrentTilemap(tilemap`level1`)
 statusbar = statusbars.create(20, 4, StatusBarKind.Health)
 statusbar.value = 100
