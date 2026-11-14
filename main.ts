@@ -447,7 +447,7 @@ let mySprite3: Sprite = null
 let mySprite: Sprite = null
 let statusbar2: StatusBarSprite = null
 let statusbar: StatusBarSprite = null
-game.showLongText("Press A to roll each roll is random and deploys a different attack your goal is to win against the ai enemy(move joystick left to start) ", DialogLayout.Bottom)
+game.showLongText("Press A to roll each roll is random and deploys a different attack your goal is to win against the ai enemy(move joystick left to start) ", DialogLayout.Full)
 tiles.setCurrentTilemap(tilemap`level1`)
 statusbar = statusbars.create(20, 4, StatusBarKind.Health)
 statusbar.value = 100
@@ -495,8 +495,8 @@ let mySprite2 = sprites.create(img`
     . . f f f f f f f f f f . . . . 
     . . . f f f . . . f f . . . . . 
     `, SpriteKind.Enemy)
-tiles.placeOnRandomTile(mySprite, sprites.dungeon.floorDarkDiamond)
-tiles.placeOnRandomTile(mySprite2, assets.tile`myTile`)
+tiles.placeOnRandomTile(mySprite, assets.tile`transparency16`)
+tiles.placeOnRandomTile(mySprite2, assets.tile`transparency16`)
 scene.cameraFollowSprite(mySprite)
 mySprite3 = sprites.create(img`
     666666666666f666666666666f66666666666666666f661d6666
